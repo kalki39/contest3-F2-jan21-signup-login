@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login & Signup Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <section class="wrapper">
+        <div class="form signup" id="form1">
+            <header>Signup</header>
+            <form method="post">
+                <input type="text" id="name" placeholder="Full name" required value="" onkeyup="validate()" />
+                <input type="text" id="email" placeholder="Email address" required value="" onkeyup="validate()" />
+                <input type="password" id="pass" placeholder="Password" required value="" onkeyup="validate()" />
+                <input type="password" id="cpass" placeholder="Confirm Password" required value=""
+                    onkeyup="validate()" />
+                <p>
+                    <label class="check">1) Name should at least be 2 letter word</label><br>
+                    <label class="check">2) Passwords should have at least 1 capital letter, 1 small, 1 number and 1
+                        special characters, but password cannot be the same as name or email.</label><br>
+                    <label class="check">3) Password and confirm password should be the same.</label><br>
+                    <label class="check">4) Enter valid email address.</label>
+                    <label class="check"></label>
+                    <label class="check"></label>
+                </p>
+                <!-- <div class="checkbox">
+                    <input type="checkbox" id="signupCheck" />
+                    <label for="signupCheck">I accept all terms & conditions</label>
+                </div> -->
+                <input type="button" value="Signup" onclick="val()">
+                <p class="error" id="error"></p>
+                <input type="button" onclick="login()" value="login" id="logredir" style="display: none;">
+                
+
+            </form>
+            
+        </div>
+    </section>
+
+
+    <script src="./script.js"></script>
+
+    <script>
+        
+
+
+
+        // const wrapper = document.querySelector(".wrapper"),
+        //     signupHeader = document.querySelector(".signup header"),
+        //     loginHeader = document.querySelector(".login header");
+
+        // loginHeader.addEventListener("click", () => {
+        //     wrapper.classList.add("active");
+        // });
+        // signupHeader.addEventListener("click", () => {
+        //     wrapper.classList.remove("active");
+        // });
+    </script>
+
+</body>
+
+</html>
